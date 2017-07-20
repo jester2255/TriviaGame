@@ -31,8 +31,8 @@ function trivaStart(){ //start of triviaStart
     $("#header").html("<h1>Trivia! Trivia! Trivia!</h1> <br> <h3>Time remaining "+counter+" seconds</h3>");
     console.log(counter); //debugging  
    		if (counter === 0){
-    		theEnd();
         	clearInterval(interval);
+        	theEnd();
     	}
 	}
 
@@ -43,16 +43,16 @@ function trivaStart(){ //start of triviaStart
 	$("#header2").append("<form> <input type='radio' name='answer' value='0'> Hyper toddlers making lemonade <input type='radio' name='answer' value='0'> Hypertext madeup language <br> <input type='radio' name='answer' value='1'> Hypertext markup language <input type='radio' name='answer' value='0'> Hypertext mobile language <br> </form>");
 	$("#header2").append("<br><p>What does CSS stand for?</p><br>");
 	$("#header2").append("<form> <input type='radio' name='answer' value='0'> Carbonated Soda Slurpy <input type='radio' name='answer' value='0'> Carbuncle shimmy shack <br> <input type='radio' name='answer' value='0'> Cat Styling salon <input type='radio' name='answer' value='1'> Cascading Style Sheet<br> </form>");
-	$("#header2").append("<br><p>What dose AJAX stand for?</p><br>");
-	$("#header2").append("<!--<form> <input type='radio' name='answer' value='0'> Awsome jazz asynchronous xylophone <input type='radio' name='answer' value='0'>Animals jumping asynchronously examples<br> <input type='radio' name='answer' value='0'>Clean dishes at low prices <input type='radio' name='answer' value='1'>Asynchronous JavaScript and XML<br> </form>");
+	$("#header2").append("<br><p>What does AJAX stand for?</p><br>");
+	$("#header2").append("<form> <input type='radio' name='answer' value='0'> Awsome jazz asynchronous xylophone <input type='radio' name='answer' value='0'>Animals jumping asynchronously examples<br> <input type='radio' name='answer' value='0'>Clean dishes at low prices <input type='radio' name='answer' value='1'>Asynchronous JavaScript and XML<br> </form>");
 	$("#header2").append("<br><p>What does PHP stand for?</p><br>");
 	$("#header2").append("<form> <input type='radio' name='answer' value='1'>HyperText Preprocessor<input type='radio' name='answer' value='0'>People Happy People<br><input type='radio' name='answer' value='0'>porcupine helping pinapples<input type='radio' name='answer' value='0'>plentiful happy platypuses <br> </form>");
-	$("#header2").append("<br><p>Question 6</p><br>");
-	$("#header2").append("<form> <input type='radio' name='answer' value='1'>I am correct <input type='radio' name='answer' value='0'> I am incorrect<br> <input type='radio' name='answer' value='0'>I am incorrect <input type='radio' name='answer' value='0'>I am incorrect<br> </form>");
-	$("#header2").append("<br><p>Question 7</p><br>");
-	$("#header2").append("<form> <input type='radio' name='answer' value='1'>I am correct <input type='radio' name='answer' value='0'> I am incorrect<br> <input type='radio' name='answer' value='0'>I am incorrect <input type='radio' name='answer' value='0'>I am incorrect<br> </form>");
-	$("#header2").append("<br><p>Question 8</p><br>");
-	$("#header2").append("<form> <input type='radio' name='answer' value='1'>I am correct <input type='radio' name='answer' value='0'> I am incorrect<br> <input type='radio' name='answer' value='0'>I am incorrect <input type='radio' name='answer' value='0'>I am incorrect<br> </form>");
+	$("#header2").append("<br><p>What does JSON stand for?</p><br>");
+	$("#header2").append("<form><input type='radio' name='answer' value='0'>jumpin style of norwegians <input type='radio' name='answer' value='0'> Just sit on nothing<br><input type='radio' name='answer' value='1'>JavaScript Object Notation <input type='radio' name='answer' value='0'>Jason Simon Oliver Nathan <br> </form>");
+	$("#header2").append("<br><p>What does API stand for?</p><br>");
+	$("#header2").append("<form><input type='radio' name='answer' value='0'>Apple pie interface <input type='radio' name='answer' value='1'>Application programming interface<br> <input type='radio' name='answer' value='0'>Aqua polo incognito <input type='radio' name='answer' value='0'>Application prepending intercom <br> </form>");
+	$("#header2").append("<br><p>What does GIF stand for?</p><br>");
+	$("#header2").append("<form><input type='radio' name='answer' value='0'>Grummpy ignorant farts<input type='radio' name='answer' value='0'> Get in fast!<br><input type='radio' name='answer' value='1'>Graphics Interchange Format<input type='radio' name='answer' value='0'> Git Interchange Forum<br> </form>");
 	});
 }//end of triviaStart
 
@@ -69,7 +69,7 @@ function trivaStart(){ //start of triviaStart
 	    	//displayes the total correct and incorrect then resets the game
 	    	var missed = 8 - totalScore 
 	    	alert("Times up! Your score is " + totalScore + " correct and " + missed +" inccorect")
-	    	document.getElementById("theContainer").reset();
+	    	//document.getElementById("theContainer").reset();
 	    };
 
 //------------------------------------------------------------------------------------------------------------
